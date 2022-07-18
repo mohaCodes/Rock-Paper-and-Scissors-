@@ -36,7 +36,7 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-
+// Comment !
 
 const playerSelection = 'Scissors'
 const computerSelection = getComputerSelection()
