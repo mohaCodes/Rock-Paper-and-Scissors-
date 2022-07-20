@@ -1,0 +1,27 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "1.0.0",
+  "description": "Hello World!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohaCodes/rock_paper_scissors.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohaCodes/rock_paper_scissors/issues"
+  },
+  "homepage": "https://github.com/mohaCodes/rock_paper_scissors#readme",
+  "dependencies": {
+    "bitwise": "^2.1.0",
+    "flowbite": "^1.5.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
