@@ -1,19 +1,19 @@
 // Global player selection
 let playerSelection
 
-
 // reset button in header
 const resetButton = document.getElementById('resetButton')
-
-
 
 // player and computer score counter
 let player = document.querySelector('#you')
 let com = document.querySelector('#com')
 
-
 // getting all buttons as a node list
-const buttons = document.querySelectorAll('button')
+const buttons = document.querySelector('#conSection').querySelectorAll('button')
+
+// result message
+let resultMessage = document.getElementById('resultMessage')
+
 
 
 
@@ -61,6 +61,7 @@ resetButton.addEventListener('click', () => {
 })
 
 
+
 // attaching every choice button with the same eventlistener
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -71,13 +72,16 @@ buttons.forEach((button) => {
         // Depending on the output of this conditional expression, the score will be updated
         if(roundRes.includes('W')) {
             player.textContent = `${parseInt(player.textContent) + 1}`
+            resultMessage.textContent = roundRes
             console.log(roundRes);
 
         } if (roundRes.includes('L')) {
             com.textContent = `${parseInt(com.textContent) + 1}`
+            resultMessage.textContent = roundRes
             console.log(roundRes);
 
         } else {
+            resultMessage.textContent = roundRes
             console.log('Tie!');
         }
 

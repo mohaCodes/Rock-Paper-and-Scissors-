@@ -19,74 +19,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="bg-gray-50 font-poppins p-0 m-0 text-black w-screen max-w-screen h-screen max-h-screen overflow-x-clip">
+<body class="bg-gray-50 font-poppins p-0 m-0 text-black w-screen max-w-screen h-screen max-h-screen overflow-x-clip overflow-y-hidden">
     
 
-
-    <!-- Header containing reset button and simple text logo -->
-    <section class="bg-indigo-700 py-5 px-5 flex flex-row justify-between">
-
-        <h1 class="text-lg text-white">Rock Paper Scissors</h1>
-
-        <button type="reset" id="resetButton" class="text-white opacity-95 text-sm">Reset</button>
-    </section>
-
-    
-    
-    <!-- Div containg main header and explanatory paragraph -->
-    <section class="mx-8 mt-20 space-y-1.5">
-        <h1 class="text-3xl font-medium leading-8">
-            Can you beat the computer?
-        </h1>
-        <p class="text-gray-500 leading-5">
-            In order to beat the computer, you have to play a simple Rock Paper Scissors game.
-        </p>
-    </section>
+    <div class="sm:block hidden text-gray-50 bg-indigo-400 rounded-xl w-fit p-6 m-auto mt-32 duration-300">
+        <h1 class="text-4xl text-center">This website Works on smaller screens only</h1>
+        <p class="text-center">visit <a class="hover:text-lg text-indigo-600 duration-500 from-indigo-300 via-indigo-500 to-purple-500" href="https://github.com/mohaCodes">@mohaCodes on Github</a> for more information</p>
+    </div>
 
 
+    <div class="sm:hidden min-w-full">
+        <!-- Header containing reset button and simple text logo -->
+        <section class="bg-indigo-700 py-5 px-5 flex flex-row justify-between">
 
-    <!-- Containg play buttons, player's score and computer score-->
-    <section id="conSection" class="space-y-10 w-full duration-1000 mx-auto flex flex-col justify-center mt-24">
+            <h1 class="text-lg text-white">Rock Paper Scissors</h1>
+
+            <button type="reset" id="resetButton" class="text-white opacity-95 text-sm">Reset</button>
+        </section>
+
         
         
-        <!-- Containing player's score and com's score -->
-        <div class="flex flex-row self-center justify-evenly w-full">
+        <!-- Div containg main header and explanatory paragraph -->
+        <section class="mx-8 mt-20 space-y-1.5">
+            <h1 class="text-3xl font-medium leading-8">
+                Can you beat the computer?
+            </h1>
+            <p class="text-gray-500 leading-4 font-light text-sm">
+                In order to beat the computer, you have to play a simple Rock Paper Scissors game.
+            </p>
+        </section>
+
+
+
+        <!-- Containg play buttons, player's score and computer score-->
+        <section id="conSection" class="space-y-10 w-full duration-1000 mx-auto flex flex-col justify-center mt-24">
             
-            <div class="w-fit">
-                <h2 class="text-xl">You</h2>
+            
+            <!-- Containing player's score and com's score -->
+            <div class="flex flex-row self-center justify-evenly w-full">
+                
+                <div class="w-fit">
+                    <h2 class="text-xl">You</h2>
 
-                <p id="you" class="text-center text-gray-700">0</p>
+                    <p id="you" class="text-center text-gray-700">0</p>
 
+                </div>
+
+                
+                <div class="w-fit">
+                    <h2 class="text-xl">Com</h2>
+
+                    <p id="com" class="text-center text-gray-700">0</p>
+
+                </div>
             </div>
 
-            
-            <div class="w-fit">
-                <h2 class="text-xl">Com</h2>
 
-                <p id="com" class="text-center text-gray-700">0</p>
 
+
+            <!-- containing thre buttons, rock, paper and scissors -->
+            <div class="space-x-5 flex justify-evenly px-5">
+                <button id="Rock" type="button" class="flex-auto w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Rock</button>
+                <button id="Paper" type="button" class="flex-auto w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Paper</button>
+                <button id="Scissors" type="button" class="flex-shrink w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Scissors</button>
             </div>
-        </div>
 
+            <p id="resultMessage" class="text-center text-gray-400"></p>
 
+        </section>
+        
+        
 
+        <!-- Footer containing info about me -->
+        <footer class="bg-indigo-500 -mb-1 w-full border-b text-white absolute bottom-0 box-border h-1/6 p-5">
+            <h1 class="text-sm">Developed by <a class="" href="https://github.com/mohaCodes" target="_blank">@mohaCodes</a></h1>
 
-        <!-- containing thre buttons, rock, paper and scissors -->
-        <div class="space-x-5 flex justify-evenly px-5">
-            <button id="Rock" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Rock</button>
-            <button id="Paper" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Paper</button>
-            <button id="Scissors" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Scissors</button>
-        </div>
-
-    </section>
-    
-    
-
-    <!-- Footer containing info about me -->
-    <footer class="bg-indigo-500 -mb-1 w-full border-b text-white absolute bottom-0 box-border h-1/6 p-5">
-        <h1 class="text-sm">Developed by <a class="focus:text-purple-900 visited:text-purple-900" href="https://github.com/mohaCodes" target="_blank">@mohaCodes</a></h1>
-
-    </footer>
+        </footer>
+    </div>
 
 
 
