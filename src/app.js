@@ -2,6 +2,11 @@
 let playerSelection
 
 
+// reset button in header
+const resetButton = document.getElementById('resetButton')
+
+
+
 // player and computer score counter
 let player = document.querySelector('#you')
 let com = document.querySelector('#com')
@@ -48,7 +53,15 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-// attaching every button with the same eventlistener
+
+// attaching an eventlistener for reset button
+resetButton.addEventListener('click', () => {
+    player.textContent = 0
+    com.textContent = 0
+})
+
+
+// attaching every choice button with the same eventlistener
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
 
@@ -65,13 +78,9 @@ buttons.forEach((button) => {
             console.log(roundRes);
 
         } else {
-            alert('Tie!')
+            console.log('Tie!');
         }
 
     })
 })
-
-
-
-
 
