@@ -1,3 +1,14 @@
+// 'Are you ready' and button section
+const conSection = document.getElementById('conSection')
+
+const areYouReadyText = document.getElementsByTagName('h2')
+
+
+// 'Continue' button
+const conButton = document.getElementById('conButton')
+
+
+
 
 
 const getComputerSelection = () => {
@@ -42,26 +53,4 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = 'Scissors'
 const computerSelection = getComputerSelection()
 
-function game() {
 
-    let player = 0
-    let com = 0
-
-    for(let i = 0; i < 5; i++) {
-
-        if (playRound(playerSelection, computerSelection).includes('W')) {
-            player++
-
-        } else if (playRound(playerSelection, computerSelection).includes('L')) {
-            com++
-
-        } else {
-            continue
-        }
-    }
-
-
-    return (player > com) ? 'You Won!' : 'Computer Won!'
-}
-
-console.log(game());

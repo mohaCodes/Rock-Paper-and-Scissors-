@@ -3,7 +3,7 @@ module.exports = {
   mode: 'jit',
   content: [
     "./src/index.html",
-    "./node_modules/flowbite/**/*.js"
+    
   ],
   theme: {
 
@@ -13,16 +13,9 @@ module.exports = {
     },
 
 
-    // Adding custom colors
-    colors: {
-      'onPrimary': '#000000',
-      'onPrimaryLight': '#1F1F1F'
-    },
-
-
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin')
+    
   ],
 }

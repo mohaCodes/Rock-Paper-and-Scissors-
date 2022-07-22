@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/mohaCodes/rock_paper_scissors#readme",
   "dependencies": {
-    "bitwise": "^2.1.0",
-    "flowbite": "^1.5.0"
+    "bitwise": "^2.1.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.1.6"

@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="m-0">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
     <meta charset="UTF-8">
+
+
+    <!-- Google's Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,0,-25" />
 
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-    <script src="https://unpkg.com/flowbite@1.5.0/dist/flowbite.js"></script>
     <link rel="stylesheet" href="/dist/output.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="bg-gray-50 font-poppins text-black w-screen max-w-screen h-screen max-h-screen overflow-clip">
+<body class="bg-gray-50 font-poppins p-0 m-0 text-black w-screen max-w-screen h-screen max-h-screen overflow-clip">
     
-
+    
     <!-- Div containg main header and explanatory paragraph -->
-    <div class="mx-8 mt-20 space-y-1.5">
+    <section class="mx-8 mt-20 space-y-1.5">
         <h1 class="text-3xl font-medium leading-8">
             Can you beat the computer?
         </h1>
         <p class="text-gray-500 leading-5">
             In order to beat the computer, you have to play a simple Rock Paper Scissors game.
         </p>
-    </div>
+    </section>
 
 
-    <!-- Div containg "Are you ready to play?" and two buttons -->
-      
+    <!-- Containg play buttons -->
+    <section id="conSection" class="space-y-3 border w-full duration-1000 mx-auto flex flex-col justify-center mt-24">
+
+        <div class="border-black border flex justify-center">
+
+            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Rock</button>
+            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Paper</button>
+            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Scissors</button>
+
+        </div>
+
+    </section>
+    
+    
+    <!-- Footer containing info about me -->
+    <footer class="bg-indigo-500 -mb-1 w-full border-b text-white absolute bottom-0 box-border h-1/6 p-5">
+        <h1 class="text-sm">Developed by <a class="focus:text-purple-900 visited:text-purple-900" href="https://github.com/mohaCodes" target="_blank">@mohaCodes</a></h1>
+
+    </footer>
 
 
 
