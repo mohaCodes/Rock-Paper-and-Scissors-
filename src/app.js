@@ -1,11 +1,15 @@
-// 'Are you ready' and button section
-const conSection = document.getElementById('conSection')
-
-const areYouReadyText = document.getElementsByTagName('h2')
+// Global player selection
+let playerSelection
 
 
-// 'Continue' button
-const conButton = document.getElementById('conButton')
+// player and computer score counter
+let player = document.querySelector('#you')
+let com = document.querySelector('#com')
+
+
+// getting all buttons as a node list
+const buttons = document.querySelectorAll('button')
+
 
 
 
@@ -22,8 +26,6 @@ const getComputerSelection = () => {
     
 
 function playRound(playerSelection, computerSelection) {
-
-    
 
     const res = playerSelection.length - computerSelection.length
     let winMessage = `You Win! ${playerSelection} beats ${computerSelection}`
@@ -46,11 +48,30 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
+// attaching every button with the same eventlistener
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+
+        playerSelection = button.id
+        let roundRes = playRound(playerSelection, getComputerSelection())
+        
+        // Depending on the output of this conditional expression, the score will be updated
+        if(roundRes.includes('W')) {
+            player.textContent = `${parseInt(player.textContent) + 1}`
+            console.log(roundRes);
+
+        } if (roundRes.includes('L')) {
+            com.textContent = `${parseInt(com.textContent) + 1}`
+            console.log(roundRes);
+
+        } else {
+            alert('Tie!')
+        }
+
+    })
+})
 
 
-// Comment Baby !
 
-const playerSelection = 'Scissors'
-const computerSelection = getComputerSelection()
 
 
