@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="bg-gray-50 font-poppins p-0 m-0 text-black w-screen max-w-screen h-screen max-h-screen overflow-clip">
+<body class="bg-gray-50 font-poppins p-0 m-0 text-black w-screen max-w-screen h-screen max-h-screen overflow-y-clip">
     
     
     <!-- Div containg main header and explanatory paragraph -->
@@ -33,20 +33,44 @@
     </section>
 
 
-    <!-- Containg play buttons -->
-    <section id="conSection" class="space-y-3 border w-full duration-1000 mx-auto flex flex-col justify-center mt-24">
 
-        <div class="border-black border flex justify-center">
+    <!-- Containg play buttons, player's score and computer score-->
+    <section id="conSection" class="space-y-10 w-full duration-1000 mx-auto flex flex-col justify-center mt-24">
+        
+        
+        <!-- Containing player's score and com's score -->
+        <div class="flex flex-row self-center justify-evenly w-full">
+            
+            <div class="w-fit">
+                <h2 class="text-xl">You</h2>
 
-            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Rock</button>
-            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Paper</button>
-            <button id="conButton" type="button" class="w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Scissors</button>
+                <p class="text-center text-gray-700">0</p>
 
+            </div>
+
+            
+            <div class="w-fit">
+                <h2 class="text-xl">Com</h2>
+
+                <p class="text-center text-gray-700">0</p>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- containing thre buttons, rock, paper and scissors -->
+        <div class="space-x-5 flex justify-evenly px-5">
+            <button id="conButton" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Rock</button>
+            <button id="conButton" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Paper</button>
+            <button id="conButton" type="button" class="flex-1 w-fit m-auto duration-75 py-2 px-5 text-sm font-medium text-center text-white bg-indigo-600 shadow-md rounded-lg">Scissors</button>
         </div>
 
     </section>
     
     
+
     <!-- Footer containing info about me -->
     <footer class="bg-indigo-500 -mb-1 w-full border-b text-white absolute bottom-0 box-border h-1/6 p-5">
         <h1 class="text-sm">Developed by <a class="focus:text-purple-900 visited:text-purple-900" href="https://github.com/mohaCodes" target="_blank">@mohaCodes</a></h1>
