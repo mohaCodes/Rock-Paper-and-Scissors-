@@ -612,20 +612,12 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-1\/6 {
   height: 16.666667%;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
+.max-h-\[100\%\] {
+  max-height: 100%;
 }
 
 .w-fit {
@@ -638,8 +630,8 @@ video {
   width: 100%;
 }
 
-.min-w-full {
-  min-width: 100%;
+.max-w-\[100\%\] {
+  max-width: 100%;
 }
 
 .flex-auto {
@@ -698,8 +690,8 @@ video {
   align-self: center;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
+.overflow-clip {
+  overflow: clip;
 }
 
 .overflow-x-clip {
